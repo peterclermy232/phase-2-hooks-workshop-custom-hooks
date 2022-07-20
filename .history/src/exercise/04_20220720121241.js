@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export function useLocalStorage(key, initialValue = null) {
-  const [state, setState] = useState(localStorage.getItem(key) || initialValue);
+  const [state, setState] = useState(localStorage.getItem(key) || initialValue
 
   useEffect(() => {
     if (state !== null) {
@@ -29,7 +29,7 @@ function Form() {
   return (
     <form style={{ display: "flex", flexDirection: "column" }}>
       <label htmlFor="name">Name:</label>
-      <input type="text" value={name} onChange={e => setName(e.target.value)} />
+      <input type="text" value={name} onChange={e => setName(e.target.value)} 
       <h4>{name ? `Welcome, ${name}!` : "Enter your name"}</h4>
     </form>
   );

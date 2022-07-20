@@ -15,7 +15,7 @@ export function useMouseCoordinates() {
     window.addEventListener("mousemove", handleMouseMove);
 
     return function cleanup() {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseM
     };
   }, []);
 
@@ -26,7 +26,7 @@ export default function MyComponent() {
   const { clientX, clientY } = useMouseCoordinates();
 
   return (
-    <div style={{ cursor: "none", width: "100%", height: "100%" }}>
+    <div style={{ cursor: "none", width: "100%", height: "
       <h2>Mouse X: {clientX}</h2>
       <h2>Mouse Y: {clientY}</h2>
       <Cursor x={clientX} y={clientY} />

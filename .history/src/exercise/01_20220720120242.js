@@ -19,11 +19,9 @@ export default function Home() {
   */
  
  
-  /* useEffect(() => {
+   useEffect(() => {
     document.title = "Welcome to the home page!";
   }, []);
-
-  */
 
   return (
     <div>

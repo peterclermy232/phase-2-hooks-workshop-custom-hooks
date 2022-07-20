@@ -23,8 +23,6 @@ export default function Home() {
     document.title = "Welcome to the home page!";
   }, []);
 
-  */
-
   return (
     <div>
       <h1>Home Page</h1>
